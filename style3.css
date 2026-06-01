@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: Questrial, sans-serif;
+  background-color: #fbfbf8;
+  color: #111;
+  
+  background-color: #fbfbf8;
+  background-image: url("./images/texture3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10vw;
+}
+
+.content {
+  padding: 10vh 10vw;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 40px;
+  z-index: 100;
+}
+
+.site-name {
+  color: #111;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.dropdown {
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.dropbtn {
+  background: none;
+  border: 1px solid #111;
+  padding: 8px 14px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+
+  border: 1px solid #111;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 14px;
+  color: #111;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: rgba(0,0,0,0.06);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.news-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  box-sizing: border-box;
+  padding: 10px 40px;
+
+  border-top: 0px solid rgba(0,0,0,0.18);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  z-index: 100;
+}

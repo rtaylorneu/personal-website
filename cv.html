@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CV – Robyn Holly Taylor-Neu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="./images/texture3_pale.jpg" as="image">
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <style>
+     .cv-section {
+      width: min(800px, 70vw);
+      margin: 10vh auto 8rem auto;
+    }
+
+    .cv-block {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 0 3rem;
+      margin-bottom: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(0,0,0,0.15);
+    }
+
+    .cv-block h2 {
+      font-size: 0.85rem;  /* slightly larger than before */
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #111;
+      margin: 0;
+      padding-top: 0.2rem;
+    }
+    .cv-entries {
+      grid-column: 2;
+        }
+    .cv-entry {
+      margin-bottom: 1.6rem;
+      padding-bottom: 1.6rem;
+      border-bottom: none;  /* remove item separators */
+    }
+
+    .cv-entry:last-child {
+      border-bottom: none;
+    }
+
+    .cv-entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+    }
+
+    .cv-entry-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0;
+      line-height: 1.4;
+      flex: 1;
+}
+
+    .cv-entry-date {
+      font-size: 0.8rem;
+      color: #555;
+      white-space: nowrap;
+      flex-shrink: 0;
+      padding-left: 2rem;
+}
+
+    .cv-entry-sub {
+      font-size: 0.9rem;
+      color: #444;
+      margin: 0.2rem 0 0 0;
+      padding-right: 80px;
+      line-height: 1.4;
+    }
+
+    .cv-entry-detail {
+      font-size: 0.85rem;
+      color: #666;
+      margin: 0.15rem 0 0 0;
+      font-style: italic;
+      padding-right: 80px;
+    }
+
+    .cv-entry a {
+      color: #111;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .cv-entry a:hover {
+      opacity: 0.6;
+    }
+
+    /* Placeholder style */
+    .cv-placeholder {
+      font-size: 0.85rem;
+      color: #999;
+      font-style: italic;
+    }
+
+    @media (max-width: 640px) {
+      .cv-block {
+        grid-template-columns: 1fr;
+      }
+      .cv-block h2 {
+        margin-bottom: 1rem;
+      }
+      .cv-entries {
+        grid-column: 1;
+      }
+    }
+  </style>
+</head>
+<body class="subpage">
+<header class="topbar">
+  
+  <div class="dropdown">
+    <button class="dropbtn">...</button>
+    <div class="dropdown-content">
+      <a href="research.html">Research</a>
+      <a href="writing.html">Writing</a>
+      <a href="art.html">Art</a>
+      <a href="cv.html">CV</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="cv-section">
+
+    <!-- EDUCATION -->
+    <div class="cv-block">
+      <h2>Education</h2>
+      <div class="cv-entries">
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Doctor of Philosophy in Sociocultural Anthropology</p>
+            <span class="cv-entry-date">2025</span>
+          </div>
+          <p class="cv-entry-sub">University of California, Berkeley</p>
+          <p class="cv-entry-detail">Unsettling forms: Animation, alienation, and violence in Berlin</p>
+          <p class="cv-entry-detail">— Co-advisors: Charles L. Briggs & Daniel Fisher;
+          <p class="cv-entry-detail"> Committee: Charles Hirschkind, Stefania Pandolfo & Niklaus Largier</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Master of Arts in Social Sciences</p>
+            <span class="cv-entry-date">2016</span>
+          </div>
+          <p class="cv-entry-sub">University of Chicago</p>
+          <p class="cv-entry-detail">"All there is": On reconciliation and the poetics of a singing voice</p>
+          <p class="cv-entry-detail">— Advisor: Michael Silverstein</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Bachelor of Arts in Sociology, with Distinction</p>
+            <span class="cv-entry-date">2014</span>
+          </div>
+          <p class="cv-entry-sub">University of Alberta</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FELLOWSHIPS & GRANTS -->
+    <div class="cv-block">
+      <h2>Fellowships & Grants</h2>
+      <div class="cv-entries">
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">SSHRC Postdoctoral Fellowship</p>
+            <span class="cv-entry-date">2025–2027</span>
+          </div>
+          <p class="cv-entry-sub">Social Sciences and Humanities Research Council</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Berlin Program Postdoctoral Fellowship</p>
+            <span class="cv-entry-date">2025–2026</span>
+          </div>
+          <p class="cv-entry-sub">Berlin Program for Advanced German & European Studies,</p> 
+          <p class="cv-entry-sub">Freie Universität Berlin</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Wenner-Gren Post-PhD Research Grant</p>
+            <span class="cv-entry-date">2025–2026</span>
+          </div>
+          <p class="cv-entry-sub">The Wenner-Gren Foundation, New York</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">John Gumperz Graduate Student Essay Prize</p>
+            <span class="cv-entry-date">2024</span>
+          </div>
+          <p class="cv-entry-sub">Society of Linguistic Anthropology</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">One-Year Grant for Doctoral Candidates</p>
+            <span class="cv-entry-date">2022–2023</span>
+          </div>
+          <p class="cv-entry-sub">Deutscher Akademischer Austauschdienst (DAAD)</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Berkeley–Freie Universität Mobility Grant</p>
+            <span class="cv-entry-date">2022</span>
+          </div>
+          <p class="cv-entry-sub">Erasmus+</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Wenner-Gren Dissertation Fieldwork Grant</p>
+            <span class="cv-entry-date">2021–2022</span>
+          </div>
+          <p class="cv-entry-sub">The Wenner-Gren Foundation, New York</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Regents' Fellowship</p>
+            <span class="cv-entry-date">2017–2021</span>
+          </div>
+          <p class="cv-entry-sub">University of California, Berkeley</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">SSHRC Doctoral Fellowship</p>
+            <span class="cv-entry-date">2017–2020</span>
+          </div>
+          <p class="cv-entry-sub">Social Sciences and Humanities Research Council</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Diebold Fellowship in Linguistic Anthropology</p>
+            <span class="cv-entry-date">2017</span>
+          </div>
+          <p class="cv-entry-sub">University of California, Berkeley</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Master of Arts Tuition Scholarship (full)</p>
+            <span class="cv-entry-date">2015–2016</span>
+          </div>
+          <p class="cv-entry-sub">University of Chicago</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PUBLICATIONS -->
+    <div class="cv-block">
+      <h2>Publications</h2>
+      <div class="cv-entries">
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Alienable gesture</p>
+            <span class="cv-entry-date">2025</span>
+          </div>
+          <p class="cv-entry-sub"><em>Journal of Linguistic Anthropology</em></p>
+          <p class="cv-entry-detail"><a href="https://doi.org/10.1111/jola.70029" target="_blank">https://doi.org/10.1111/jola.70029</a></p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Un-sitely mediations: A gestural approach to animated citationality</p>
+            <span class="cv-entry-date">2024</span>
+          </div>
+          <p class="cv-entry-sub"><em>Semiotic Review</em> 10</p>
+          <p class="cv-entry-detail"><a href="https://semioticreview.com/ojs/index.php/sr/article/view/84" target="_blank">semioticreview.com</a></p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Post-secondary education's chronic problem (OR, it's about time.)</p>
+            <span class="cv-entry-date">2022</span>
+          </div>
+          <p class="cv-entry-sub">With A. Taylor. In <em>Equity and Social Justice Education Perspectives in Canada</em>, ed. A. Abdi. Canadian Scholars Press.</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Parasites and post-truth climate</p>
+            <span class="cv-entry-date">2019</span>
+          </div>
+          <p class="cv-entry-sub"><em>Journal of Linguistic Anthropology</em> 30(1): 4–26</p>
+          <p class="cv-entry-detail"><a href="https://doi.org/10.1111/jola.12257" target="_blank">https://doi.org/10.1111/jola.12257</a></p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">(De)constructing the "lazy Indian": An historical analysis of welfare reform in Canada</p>
+            <span class="cv-entry-date">2019</span>
+          </div>
+          <p class="cv-entry-sub">With R. Taylor-Neu, T. Friedel, A. Taylor & T. Kemble. <em>Aboriginal Policy Journal</em> 8(2): 65–87</p>
+          <p class="cv-entry-detail"><a href="http://dx.doi.org/10.5663/aps.v7i2.29340" target="_blank">http://dx.doi.org/10.5663/aps.v7i2.29340</a></p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">"All there is": The reconciliatory poetics of a singing voice</p>
+            <span class="cv-entry-date">2018</span>
+          </div>
+          <p class="cv-entry-sub"><em>American Anthropologist</em> 120(1): 113–125</p>
+          <p class="cv-entry-detail"><a href="https://doi.org/10.1111/aman.13003" target="_blank">https://doi.org/10.1111/aman.13003</a></p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">"Trying to square the circle": Research ethics and Canadian higher education</p>
+            <span class="cv-entry-date">2018</span>
+          </div>
+          <p class="cv-entry-sub">With A. Taylor & S. Butterwick. <em>European Educational Research Journal</em></p>
+          <p class="cv-entry-detail"><a href="https://doi.org/10.1177/1474904118785542" target="_blank">https://doi.org/10.1177/1474904118785542</a></p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PRESENTATIONS -->
+    <div class="cv-block">
+      <h2>Presentations</h2>
+      <div class="cv-entries">
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Elon's Arm: Notes on the Reanimation of Gesture</p>
+            <span class="cv-entry-date">2025</span>
+          </div>
+          <p class="cv-entry-sub">American Anthropological Association Meeting, New Orleans</p>
+          <p class="cv-entry-detail">Panel: Gesture: Citations, Resuscitations, and Excitations</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Peripheral Visions <em>(invited)</em></p>
+            <span class="cv-entry-date">2025</span>
+          </div>
+          <p class="cv-entry-sub">Department of Anthropology, University of California, San Diego</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Berlin is (not) Berlin: Reanimations of the City as Ethnographic "Site"</p>
+            <span class="cv-entry-date">2023</span>
+          </div>
+          <p class="cv-entry-sub">American Anthropological Association Meeting, Toronto</p>
+          <p class="cv-entry-detail">Panel: Fieldwork Technologies – Transitional Histories of Ethnographic Mediation</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Un-sitely Mediations</p>
+            <span class="cv-entry-date">2023</span>
+          </div>
+          <p class="cv-entry-sub">Semiotic Anthropology Conference, Penn University</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Unsettling the Score</p>
+            <span class="cv-entry-date">2019</span>
+          </div>
+          <p class="cv-entry-sub">American Anthropological Association / Canadian Anthropological Association Meeting, Vancouver</p>
+          <p class="cv-entry-detail">Panel: Othering Images, Images of the Other</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">A Parasite and Post-Truth Climate</p>
+            <span class="cv-entry-date">2017</span>
+          </div>
+          <p class="cv-entry-sub">American Anthropological Association Meeting, Washington D.C.</p>
+          <p class="cv-entry-detail">Panel: Reality</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TEACHING -->
+    <div class="cv-block">
+      <h2>Teaching</h2>
+      <div class="cv-entries">
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Poetics of Crisis <em>(Instructor)</em></p>
+            <span class="cv-entry-date">Spring 2025</span>
+          </div>
+          <p class="cv-entry-sub">Reading and Composition — University of California, Berkeley</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Introduction to Media Studies <em>(Discussion Leader)</em></p>
+            <span class="cv-entry-date">Fall 2024</span>
+          </div>
+          <p class="cv-entry-sub">University of California, Berkeley</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Anthropology of Animation <em>(Instructor)</em></p>
+            <span class="cv-entry-date">Fall 2020</span>
+          </div>
+          <p class="cv-entry-sub">Reading and Composition — University of California, Berkeley</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Introduction to Sociocultural Anthropology <em>(Discussion Leader)</em></p>
+            <span class="cv-entry-date">2019–2020</span>
+          </div>
+          <p class="cv-entry-sub">University of California, Berkeley</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TEACHING RECOGNITIONS -->
+    <div class="cv-block">
+      <h2>Teaching Recognitions</h2>
+      <div class="cv-entries">
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Certificate of Teaching & Learning in Higher Education</p>
+            <span class="cv-entry-date">2025</span>
+          </div>
+          <p class="cv-entry-sub">University of California, Berkeley</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Outstanding Graduate Student Instructor Award</p>
+            <span class="cv-entry-date">2020</span>
+          </div>
+          <p class="cv-entry-sub">University of California, Berkeley</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ACADEMIC & COMMUNITY ENGAGEMENT -->
+    <div class="cv-block">
+      <h2>Engagement</h2>
+      <div class="cv-entries">
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Contributing Editor, Visual & New Media Review</p>
+            <span class="cv-entry-date">2019–present</span>
+          </div>
+          <p class="cv-entry-sub">Society for Cultural Anthropology</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Co-founder & Co-convener, Armchair Ethnography Working Group</p>
+            <span class="cv-entry-date">2018–2025</span>
+          </div>
+          <p class="cv-entry-sub">University of California, Berkeley</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Co-convener, Anthropological Inquiry Working Group</p>
+            <span class="cv-entry-date">2018–2021</span>
+          </div>
+          <p class="cv-entry-sub">University of California, Berkeley</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Co-convener, Linguistic Anthropology Working Group</p>
+            <span class="cv-entry-date">2017–2019</span>
+          </div>
+          <p class="cv-entry-sub">University of California, Berkeley</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- OTHER WRITING -->
+    <div class="cv-block">
+      <h2>Other Writing</h2>
+      <div class="cv-entries">
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">In/visible Routers: A Q&A with Ann-Christin Zuntz</p>
+            <span class="cv-entry-date">2025</span>
+          </div>
+          <p class="cv-entry-sub">Supplementals, Society for Cultural Anthropology</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Digit-al Symptoms</p>
+            <span class="cv-entry-date">2024</span>
+          </div>
+          <p class="cv-entry-sub">Anthropology News, American Anthropological Association</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Absorbing Images</p>
+            <span class="cv-entry-date">2024</span>
+          </div>
+          <p class="cv-entry-sub">Visual and New Media Review, Society for Cultural Anthropology</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Shaka McGlotten on <em>Dragging: Or, in the Drag of a Queer Life</em></p>
+            <span class="cv-entry-date">2023</span>
+          </div>
+          <p class="cv-entry-sub">CaMP Anthropology Blog</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Digitally Mediated Intimacies: An Interview with Molly Hales</p>
+            <span class="cv-entry-date">2021</span>
+          </div>
+          <p class="cv-entry-sub">Supplementals, Society for Cultural Anthropology</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Dust Response</p>
+            <span class="cv-entry-date">2019</span>
+          </div>
+          <p class="cv-entry-sub">Member Voices, Society for Cultural Anthropology</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- VISUAL ART & FILM -->
+    <div class="cv-block">
+      <h2>Visual Art & Film</h2>
+      <div class="cv-entries">
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Similar Rubble</p>
+            <span class="cv-entry-date">2025</span>
+          </div>
+          <p class="cv-entry-sub">Spectral Remix Exhibition, Merchant House Gallery, New Orleans. Video.</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Album Cover Illustration for John Borra, <em>Last Dance at The E Room</em></p>
+            <span class="cv-entry-date">2025</span>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Animation GIF and Illustrations for Hard-Working Students Project</p>
+            <span class="cv-entry-date">2022–2023</span>
+          </div>
+          <p class="cv-entry-sub">University of British Columbia</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Illustrations for Stephanie Glick, Public Scholars Initiative</p>
+            <span class="cv-entry-date">2022</span>
+          </div>
+          <p class="cv-entry-sub">University of British Columbia</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Graphic Story for Hard-Working Students Project</p>
+            <span class="cv-entry-date">2021</span>
+          </div>
+          <p class="cv-entry-sub">University of British Columbia</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Illustrations for Alberta Stories – Indigenous Stories</p>
+            <span class="cv-entry-date">2020</span>
+          </div>
+          <p class="cv-entry-sub">SSHRC Partnership Grant</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Album Cover Illustrations for John Borra, <em>Blue Wine</em></p>
+            <span class="cv-entry-date">2019</span>
+          </div>
+        </div>
+
+        <!-- PLACEHOLDER — decide whether to include earlier work -->
+        <!-- <div class="cv-entry cv-placeholder">
+          Earlier works (Loft 2015, Gum 2014) — include or omit?
+        </div> -->
+
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<div class="news-bar">
+  <span>News / Events: Similar Rubble — updates forthcoming</span>
+</div>
+</body>
+</html>

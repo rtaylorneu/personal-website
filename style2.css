@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: Questrial, sans-serif;
+  background-color: #fbfbf8;
+  color: #111;
+  
+  background-color: #fbfbf8;
+  background-image: url("./images/texture3_pale.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10vw;
+
+  max-width: 760px;
+  margin-left: 10vw;
+  margin-right: auto;
+  padding: 10vh 0;
+}
+
+.content {
+  padding: 10vh 10vw;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 40px;
+  z-index: 100;
+}
+
+.site-name {
+  color: #111;
+  text-decoration: none;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.dropdown {
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.dropbtn {
+  
+background: rgba(245, 245, 247, 0.55);
+backdrop-filter: blur(8px);
+  border: 1px solid #111;
+  padding: 0.6rem 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+
+  min-width: 100px;
+  padding: 0.4rem 0;
+
+  background: rgba(30, 30, 34, 0.38);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(249, 249, 251, 0.35);
+  z-index: 200;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.65rem 1rem;
+
+  color: rgb(249, 249, 251);
+  text-decoration: none;
+
+  font-size: 0.82rem;
+
+  text-align: right;
+
+  letter-spacing: 0.03em;
+
+  text-transform: uppercase;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.news-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  box-sizing: border-box;
+  padding: 10px 40px;
+
+  border-top: 0px solid rgba(0,0,0,0.18);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  z-index: 100;
+}
+
+.about-section {
+  display: flex;
+  gap: 4rem;
+
+  align-items: flex-start;
+
+  width: min(1200px, 90vw);
+
+  margin: 18vh auto 8rem auto;
+}
+
+.about-image {
+  width: 320px;
+  max-width: 38vw;
+
+  border-radius: 0px;
+
+  flex-shrink: 0;
+}
+
+.about-text {
+  max-width: 620px;
+}
