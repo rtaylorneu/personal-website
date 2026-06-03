@@ -194,3 +194,7 @@ main {
 .site-back:hover {
   opacity: 0.5;
 }
+
+.carousel.portrait .carousel-track img {
+  aspect-ratio: 3/4;
+}
