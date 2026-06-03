@@ -7,10 +7,126 @@
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="preload" href="./images/texture3_pale.jpg" as="image">
   <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <style>
+    .art-section {
+      width: min(860px, 72vw);
+      margin: 10vh auto 8rem auto;
+    }
+    .art-section h1 {
+      font-size: 0.85rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 0 0 3rem 0;
+    }
+    .art-entry {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      padding: 2.5rem 0;
+      border-top: 1px solid rgba(0,0,0,0.15);
+      align-items: start;
+    }
+    .art-entry:last-child {
+      border-bottom: 1px solid rgba(0,0,0,0.15);
+    }
+    .carousel {
+      position: relative;
+      width: 100%;
+    }
+    .carousel-track {
+      overflow: hidden;
+      width: 100%;
+    }
+    .carousel-track img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      aspect-ratio: 4/3;
+    }
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.4rem;
+      color: rgba(0,0,0,0.45);
+      text-shadow: 0 0 4px white, 0 0 6px white;
+      font-size: 1.7rem;
+      line-height: 1;
+      transition: color 0.2s;
+      z-index: 2;
+    }
+    .carousel-btn:hover {
+      color: rgba(0,0,0,0.85);
+    }
+    .carousel-btn.prev { left: 0.3rem; }
+    .carousel-btn.next { right: 0.3rem; }
+    .carousel-dots {
+      display: flex;
+      gap: 0.3rem;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+    .carousel-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.2);
+      transition: background 0.2s;
+    }
+    .carousel-dot.active {
+      background: rgba(0,0,0,0.55);
+    }
+    .art-entry-text {
+      padding-top: 0.2rem;
+    }
+    .art-entry-text h2 {
+      font-size: 1rem;
+      font-weight: 400;
+      margin: 0 0 0.3rem 0;
+      line-height: 1.3;
+    }
+    .art-entry-text h2 a {
+      color: #111;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .art-entry-text h2 a:hover { opacity: 0.6; }
+    .art-entry-meta {
+      font-size: 0.8rem;
+      color: #555;
+      margin: 0 0 1rem 0;
+      font-style: italic;
+    }
+    .art-entry-text p {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      margin: 0;
+      color: #222;
+    }
+    .art-entry-text p a {
+      color: #111;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .art-entry-text p a:hover { opacity: 0.6; }
+    .art-entry.text-only {
+      grid-template-columns: 1fr;
+    }
+    @media (max-width: 680px) {
+      .art-section { width: 88vw; }
+      .art-entry {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body class="subpage">
 <header class="topbar">
-  
   <div class="dropdown">
     <button class="dropbtn">...</button>
     <div class="dropdown-content">
@@ -23,14 +139,200 @@
     </div>
   </div>
 </header>
+
 <main>
-  <section class="cv-section" style="width: min(800px, 70vw); margin: 10vh auto 8rem auto;">
+  <section class="art-section">
     <h1>Art</h1>
-    <p>Portfolio forthcoming.</p>
+
+    <!-- 1. Similar Rubble -->
+    <div class="art-entry">
+      <div class="carousel" data-index="0">
+        <div class="carousel-track">
+          <img src="images/similarrubble-1.png" alt="Similar Rubble">
+          <img src="images/similarrubble-2.png" alt="Similar Rubble" style="display:none">
+          <img src="images/similarrubble-3.png" alt="Similar Rubble" style="display:none">
+          <img src="images/similarrubble-4.png" alt="Similar Rubble" style="display:none">
+          <img src="images/similarrubble-5.png" alt="Similar Rubble" style="display:none">
+        </div>
+        <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+        <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+        <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+        </div>
+      </div>
+      <div class="art-entry-text">
+        <h2><a href="https://www.spectralremix.org/taylor-neu" target="_blank">Similar Rubble</a></h2>
+        <p class="art-entry-meta">Video installation, 2024–25</p>
+        <p><em>Similar Rubble</em> is a video-art installation that blends hand-drawn animation, machine vision, and archival materials to explore spectral resemblances between devastated urban spaces in Berlin and beyond. Anchored in Berlin—a city marked by loops of destruction and reconstruction, shifting borders, and fragile promises of refuge—the piece traces the ways that ruins are seen, remembered, and made to resemble. Berlin is (not) (only) Berlin.</p>
+      </div>
+    </div>
+
+    <!-- 2. Society for Cultural Anthropology -->
+    <div class="art-entry">
+      <div class="carousel" data-index="0">
+        <div class="carousel-track">
+          <img src="images/culanth-1.jpg" alt="Society for Cultural Anthropology">
+          <img src="images/culanth-2.jpg" alt="Society for Cultural Anthropology" style="display:none">
+          <img src="images/culanth-3.jpg" alt="Society for Cultural Anthropology" style="display:none">
+          <img src="images/culanth-4.jpg" alt="Society for Cultural Anthropology" style="display:none">
+          <img src="images/culanth-5.jpg" alt="Society for Cultural Anthropology" style="display:none">
+        </div>
+        <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+        <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+        <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+        </div>
+      </div>
+      <div class="art-entry-text">
+        <h2>Society for Cultural Anthropology — Fieldsights</h2>
+        <p class="art-entry-meta">Mixed media, 2019–24</p>
+        <p>Illustrations created for <em>Fieldsights</em> at the Society for Cultural Anthropology, including <a href="https://www.culanth.org/fieldsights/dust-response" target="_blank">Dust Response</a> (2019), <a href="https://www.culanth.org/fieldsights/digitally-mediated-intimacies-an-interview-with-molly-hales" target="_blank">Digitally Mediated Intimacies</a> (2021), and <a href="https://www.culanth.org/fieldsights/in-visible-routers-an-interview-with-ann-christin-zuntz" target="_blank">In/visible Routers</a> (2024).</p>
+      </div>
+    </div>
+
+    <!-- 3. Hard-Working Students -->
+    <div class="art-entry">
+      <div class="carousel" data-index="0">
+        <div class="carousel-track">
+          <img src="images/hws-1.jpg" alt="Hard-Working Students">
+          <img src="images/hws-2.jpg" alt="Hard-Working Students" style="display:none">
+          <img src="images/hws-3.jpg" alt="Hard-Working Students" style="display:none">
+        </div>
+        <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+        <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+        <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+        </div>
+      </div>
+      <div class="art-entry-text">
+        <h2>Hard-Working Students</h2>
+        <p class="art-entry-meta">Pencil, ink, and digital painting, 2021–23<br>University of British Columbia</p>
+        <p>A series of illustrations and animations commissioned for the Hard-Working Students research project at UBC, including work for <em>The Stamina of Working Students: A Guide to Human Flourishing</em> (2022), the animation <em>Students as Jugglers</em> (2023), and the comic <em>5 to 9: What a way to make a living!</em> (2021).</p>
+      </div>
+    </div>
+
+    <!-- 4. Alberta Stories -->
+    <div class="art-entry">
+      <div class="carousel" data-index="0">
+        <div class="carousel-track">
+          <img src="images/ab-1.jpg" alt="Alberta Stories">
+          <img src="images/ab-2.jpg" alt="Alberta Stories" style="display:none">
+          <img src="images/ab-3.jpg" alt="Alberta Stories" style="display:none">
+          <img src="images/ab-4.jpg" alt="Alberta Stories" style="display:none">
+        </div>
+        <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+        <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+        <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+        </div>
+      </div>
+      <div class="art-entry-text">
+        <h2>Alberta Stories</h2>
+        <p class="art-entry-meta">Pencil on paper and digital painting, 2019–20<br>Social Sciences and Humanities Research Council, Canada</p>
+        <p>Illustrations commissioned for the Alberta Stories — Indigenous Stories SSHRC Partnership Grant project.</p>
+      </div>
+    </div>
+
+    <!-- 5. Poster & Album Design -->
+    <div class="art-entry">
+      <div class="carousel portrait" data-index="0">
+        <div class="carousel-track">
+          <img src="images/poster-1.jpg" alt="Poster Design">
+          <img src="images/poster-2.jpg" alt="Poster Design" style="display:none">
+          <img src="images/poster-3.jpg" alt="Poster Design" style="display:none">
+          <img src="images/poster-4.jpg" alt="Poster Design" style="display:none">
+        </div>
+        <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+        <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+        <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+        </div>
+      </div>
+      <div class="art-entry-text">
+        <h2>Poster &amp; Album Design</h2>
+        <p class="art-entry-meta">Mixed media and digital, 2018–present</p>
+        <p>[To fill in.]</p>
+      </div>
+    </div>
+
+    <!-- 6. Other Commissions -->
+    <div class="art-entry">
+      <div class="carousel" data-index="0">
+        <div class="carousel-track">
+          <img src="images/other-1.jpg" alt="Other Commissions">
+          <img src="images/other-2.jpg" alt="Other Commissions" style="display:none">
+          <img src="images/other-3.jpg" alt="Other Commissions" style="display:none">
+        </div>
+        <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+        <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+        <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+        </div>
+      </div>
+      <div class="art-entry-text">
+        <h2>Other Commissions</h2>
+        <p class="art-entry-meta">Various media, 2021–23</p>
+        <p>Selected freelance illustration work, including the Eweknit project (watercolor and mixed media, 2021) and <em>From Graphic Violence to Graphic Novel</em>, commissioned for the Public Scholars Initiative at UBC (pencil and mixed media, 2023).</p>
+      </div>
+    </div>
+
+    <!-- 7. Personal Work -->
+    <div class="art-entry text-only">
+      <div class="art-entry-text">
+        <h2>Personal Work</h2>
+        <p class="art-entry-meta">Ongoing</p>
+        <p>Personal drawings, paintings, and studies in various media. See <a href="https://www.instagram.com/r0bynh0lly" target="_blank">@r0bynh0lly</a> on Instagram.</p>
+      </div>
+    </div>
+
   </section>
 </main>
+
 <div class="news-bar">
   <span>News / Events: Similar Rubble — updates forthcoming</span>
 </div>
+
+<script>
+  document.querySelectorAll('.carousel').forEach(carousel => {
+    const track = carousel.querySelector('.carousel-track');
+    const images = track.querySelectorAll('img');
+    const dots = carousel.querySelectorAll('.carousel-dot');
+    const prevBtn = carousel.querySelector('.prev');
+    const nextBtn = carousel.querySelector('.next');
+
+    if (images.length <= 1) return;
+
+    let current = 0;
+
+    function show(index) {
+      images[current].style.display = 'none';
+      dots[current].classList.remove('active');
+      current = (index + images.length) % images.length;
+      images[current].style.display = 'block';
+      dots[current].classList.add('active');
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', () => show(current - 1));
+    if (nextBtn) nextBtn.addEventListener('click', () => show(current + 1));
+  });
+</script>
 </body>
 </html>
