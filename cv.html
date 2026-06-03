@@ -8,7 +8,7 @@
   <link rel="preload" href="./images/texture3_pale.jpg" as="image">
   <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
   <style>
-     .cv-section {
+    .cv-section {
       width: min(800px, 70vw);
       margin: 10vh auto 8rem auto;
     }
@@ -23,7 +23,7 @@
     }
 
     .cv-block h2 {
-      font-size: 0.85rem;  /* slightly larger than before */
+      font-size: 0.85rem;
       font-weight: 900;
       text-transform: uppercase;
       letter-spacing: 0.08em;
@@ -31,13 +31,15 @@
       margin: 0;
       padding-top: 0.2rem;
     }
+
     .cv-entries {
       grid-column: 2;
-        }
+    }
+
     .cv-entry {
       margin-bottom: 1.6rem;
       padding-bottom: 1.6rem;
-      border-bottom: none;  /* remove item separators */
+      border-bottom: none;
     }
 
     .cv-entry:last-child {
@@ -57,7 +59,7 @@
       margin: 0;
       line-height: 1.4;
       flex: 1;
-}
+    }
 
     .cv-entry-date {
       font-size: 0.8rem;
@@ -65,7 +67,7 @@
       white-space: nowrap;
       flex-shrink: 0;
       padding-left: 2rem;
-}
+    }
 
     .cv-entry-sub {
       font-size: 0.9rem;
@@ -93,11 +95,20 @@
       opacity: 0.6;
     }
 
-    /* Placeholder style */
-    .cv-placeholder {
-      font-size: 0.85rem;
-      color: #999;
-      font-style: italic;
+    .cv-subheading {
+      font-size: 0.75rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #888;
+      margin: 0.5rem 0 1rem 0;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .cv-subheading:first-child {
+      border-top: none;
+      padding-top: 0;
     }
 
     @media (max-width: 640px) {
@@ -115,7 +126,6 @@
 </head>
 <body class="subpage">
 <header class="topbar">
-  
   <div class="dropdown">
     <button class="dropbtn">...</button>
     <div class="dropdown-content">
@@ -131,7 +141,8 @@
 
 <main>
   <section class="cv-section">
-  <p style="font-size: 1.4rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 2rem 0;">Robyn Holly Taylor-Neu</p>
+    <p style="font-size: 1.4rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 2rem 0;">Robyn Holly Taylor-Neu</p>
+
     <!-- EDUCATION -->
     <div class="cv-block">
       <h2>Education</h2>
@@ -144,7 +155,7 @@
           </div>
           <p class="cv-entry-sub">University of California, Berkeley</p>
           <p class="cv-entry-detail">Unsettling forms: Animation, alienation, and violence in Berlin</p>
-          <p class="cv-entry-detail">— Co-advisors: Charles L. Briggs & Daniel Fisher;
+          <p class="cv-entry-detail">— Co-advisors: Charles L. Briggs & Daniel Fisher</p>
           <p class="cv-entry-detail"> Committee: Charles Hirschkind, Stefania Pandolfo & Niklaus Largier</p>
         </div>
 
@@ -187,7 +198,7 @@
             <p class="cv-entry-title">Berlin Program Postdoctoral Fellowship</p>
             <span class="cv-entry-date">2025–2026</span>
           </div>
-          <p class="cv-entry-sub">Berlin Program for Advanced German & European Studies,</p> 
+          <p class="cv-entry-sub">Berlin Program for Advanced German & European Studies,</p>
           <p class="cv-entry-sub">Freie Universität Berlin</p>
         </div>
 
@@ -291,14 +302,6 @@
 
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <p class="cv-entry-title">Post-secondary education's chronic problem (OR, it's about time.)</p>
-            <span class="cv-entry-date">2022</span>
-          </div>
-          <p class="cv-entry-sub">With A. Taylor. In <em>Equity and Social Justice Education Perspectives in Canada</em>, ed. A. Abdi. Canadian Scholars Press.</p>
-        </div>
-
-        <div class="cv-entry">
-          <div class="cv-entry-header">
             <p class="cv-entry-title">Parasites and post-truth climate</p>
             <span class="cv-entry-date">2019</span>
           </div>
@@ -308,20 +311,30 @@
 
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <p class="cv-entry-title">(De)constructing the "lazy Indian": An historical analysis of welfare reform in Canada</p>
-            <span class="cv-entry-date">2019</span>
-          </div>
-          <p class="cv-entry-sub">With R. Taylor-Neu, T. Friedel, A. Taylor & T. Kemble. <em>Aboriginal Policy Journal</em> 8(2): 65–87</p>
-          <p class="cv-entry-detail"><a href="http://dx.doi.org/10.5663/aps.v7i2.29340" target="_blank">http://dx.doi.org/10.5663/aps.v7i2.29340</a></p>
-        </div>
-
-        <div class="cv-entry">
-          <div class="cv-entry-header">
             <p class="cv-entry-title">"All there is": The reconciliatory poetics of a singing voice</p>
             <span class="cv-entry-date">2018</span>
           </div>
           <p class="cv-entry-sub"><em>American Anthropologist</em> 120(1): 113–125</p>
           <p class="cv-entry-detail"><a href="https://doi.org/10.1111/aman.13003" target="_blank">https://doi.org/10.1111/aman.13003</a></p>
+        </div>
+
+        <p class="cv-subheading">Co-authored</p>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Post-secondary education's chronic problem (OR, it's about time.)</p>
+            <span class="cv-entry-date">2022</span>
+          </div>
+          <p class="cv-entry-sub">With A. Taylor. In <em>Equity and Social Justice Education Perspectives in Canada</em>, ed. A. Abdi. Canadian Scholars Press.</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">(De)constructing the "lazy Indian": An historical analysis of welfare reform in Canada</p>
+            <span class="cv-entry-date">2019</span>
+          </div>
+          <p class="cv-entry-sub">With T. Friedel, A. Taylor & T. Kemble. <em>Aboriginal Policy Journal</em> 8(2): 65–87</p>
+          <p class="cv-entry-detail"><a href="http://dx.doi.org/10.5663/aps.v7i2.29340" target="_blank">http://dx.doi.org/10.5663/aps.v7i2.29340</a></p>
         </div>
 
         <div class="cv-entry">
@@ -352,10 +365,10 @@
 
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <p class="cv-entry-title">Peripheral Visions <em>(invited)</em></p>
+            <p class="cv-entry-title">Peripheral Visions</p>
             <span class="cv-entry-date">2025</span>
           </div>
-          <p class="cv-entry-sub">Department of Anthropology, University of California, San Diego</p>
+          <p class="cv-entry-sub">Invited talk, Department of Anthropology, University of California, San Diego</p>
         </div>
 
         <div class="cv-entry">
@@ -403,34 +416,34 @@
 
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <p class="cv-entry-title">Poetics of Crisis <em>(Instructor)</em></p>
+            <p class="cv-entry-title">Poetics of Crisis</p>
             <span class="cv-entry-date">Spring 2025</span>
           </div>
-          <p class="cv-entry-sub">Reading and Composition — University of California, Berkeley</p>
+          <p class="cv-entry-sub">Instructor, Reading and Composition — University of California, Berkeley</p>
         </div>
 
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <p class="cv-entry-title">Introduction to Media Studies <em>(Discussion Leader)</em></p>
+            <p class="cv-entry-title">Introduction to Media Studies</p>
             <span class="cv-entry-date">Fall 2024</span>
           </div>
-          <p class="cv-entry-sub">University of California, Berkeley</p>
+          <p class="cv-entry-sub">Discussion Leader — University of California, Berkeley</p>
         </div>
 
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <p class="cv-entry-title">Anthropology of Animation <em>(Instructor)</em></p>
+            <p class="cv-entry-title">Anthropology of Animation</p>
             <span class="cv-entry-date">Fall 2020</span>
           </div>
-          <p class="cv-entry-sub">Reading and Composition — University of California, Berkeley</p>
+          <p class="cv-entry-sub">Instructor, Reading and Composition — University of California, Berkeley</p>
         </div>
 
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <p class="cv-entry-title">Introduction to Sociocultural Anthropology <em>(Discussion Leader)</em></p>
+            <p class="cv-entry-title">Introduction to Sociocultural Anthropology</p>
             <span class="cv-entry-date">2019–2020</span>
           </div>
-          <p class="cv-entry-sub">University of California, Berkeley</p>
+          <p class="cv-entry-sub">Discussion Leader — University of California, Berkeley</p>
         </div>
 
       </div>
@@ -460,9 +473,43 @@
       </div>
     </div>
 
-    <!-- ACADEMIC & COMMUNITY ENGAGEMENT -->
+    <!-- PROFESSIONAL DEVELOPMENT -->
     <div class="cv-block">
-      <h2>Engagement</h2>
+      <h2>Professional Development</h2>
+      <div class="cv-entries">
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title"><a href="https://americananthro.org/news/aaa-selects-2026-oped-project-participants/" target="_blank">AAA / OpEd Project — "Write to Change the World"</a></p>
+            <span class="cv-entry-date">2026</span>
+          </div>
+          <p class="cv-entry-sub">American Anthropological Association & The OpEd Project</p>
+          <p class="cv-entry-detail">Supported by the Wenner-Gren Foundation</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Pedagogy Workshops</p>
+            <span class="cv-entry-date">2024–2025</span>
+          </div>
+          <p class="cv-entry-sub">Teaching & Resource Center, University of California, Berkeley</p>
+          <p class="cv-entry-detail">Including: Syllabus and Course Design; Creating and Using Grading Rubrics; Teaching Reading & Composition; How Students Learn; and Strategies for Teaching and Learning – Creating Inclusive Classrooms</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Anthropology Pedagogy Course</p>
+            <span class="cv-entry-date">2019</span>
+          </div>
+          <p class="cv-entry-sub">University of California, Berkeley</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PROFESSIONAL ENGAGEMENT -->
+    <div class="cv-block">
+      <h2>Professional Engagement</h2>
       <div class="cv-entries">
 
         <div class="cv-entry">
@@ -471,6 +518,14 @@
             <span class="cv-entry-date">2019–present</span>
           </div>
           <p class="cv-entry-sub">Society for Cultural Anthropology</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Ad hoc reviewer</p>
+            <span class="cv-entry-date"></span>
+          </div>
+          <p class="cv-entry-sub"><em>Semiotic Review</em></p>
         </div>
 
         <div class="cv-entry">
@@ -497,17 +552,87 @@
           <p class="cv-entry-sub">University of California, Berkeley</p>
         </div>
 
+        <p class="cv-subheading">Event Organizing</p>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Gesture: Citations, resuscitations, and excitations</p>
+            <span class="cv-entry-date">2025</span>
+          </div>
+          <p class="cv-entry-sub">Oral presentation panel, American Anthropological Association Meeting, New Orleans</p>
+          <p class="cv-entry-detail">Organizer and chair; with Michael Lempert (discussant), Charles Briggs, Randeep Hothi, and Cristiana Giordano</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Cry of the Burro (Michael Taussig & Amy Franceschini / FutureFarmers)</p>
+            <span class="cv-entry-date">2018</span>
+          </div>
+          <p class="cv-entry-sub">University of California, Berkeley</p>
+          <p class="cv-entry-detail">Performance-talk on anthropological inquiry and anthropogenic climate change</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Mana of Mass Society — Panel Discussion</p>
+            <span class="cv-entry-date">2018</span>
+          </div>
+          <p class="cv-entry-sub">University of California, Berkeley</p>
+          <p class="cv-entry-detail">With William Mazzarella (University of Chicago); respondents: Ned Dostaler, Mohamad Jarada, Robyn Taylor-Neu, and Valerie Black</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Critical [S]pacings: A Symposium</p>
+            <span class="cv-entry-date">2013</span>
+          </div>
+          <p class="cv-entry-sub">University of Alberta, Edmonton</p>
+          <p class="cv-entry-detail">Symposium on space and spatialization in social theory</p>
+        </div>
+
       </div>
     </div>
 
-    <!-- OTHER WRITING -->
+    <!-- RESEARCH POSITIONS -->
+    <div class="cv-block">
+      <h2>Research Positions</h2>
+      <div class="cv-entries">
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Research Assistant to Prof. Lauren Berlant</p>
+            <span class="cv-entry-date">2016–2018</span>
+          </div>
+          <p class="cv-entry-sub">University of Chicago</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title">Research Assistant to Prof. Marshall Sahlins</p>
+            <span class="cv-entry-date">2017</span>
+          </div>
+          <p class="cv-entry-sub">University of Chicago</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ESSAYS & INTERVIEWS -->
     <div class="cv-block">
       <h2>Essays & Interviews</h2>
       <div class="cv-entries">
 
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <p class="cv-entry-title">In/visible Routers: A Q&A with Ann-Christin Zuntz</p>
+            <p class="cv-entry-title"><a href="https://campanthropology.org/2025/11/24/john-durham-peters-on-his-book-with-ken-cmiel-promiscuous-knowledge/" target="_blank">John Durham Peters on <em>Promiscuous Knowledge</em></a></p>
+            <span class="cv-entry-date">Forthcoming</span>
+          </div>
+          <p class="cv-entry-sub">CaMP Anthropology Blog</p>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <p class="cv-entry-title"><a href="https://www.culanth.org/fieldsights/in-visible-routers-an-interview-with-ann-christin-zuntz" target="_blank">In/visible Routers: A Q&amp;A with Ann-Christin Zuntz</a></p>
             <span class="cv-entry-date">2025</span>
           </div>
           <p class="cv-entry-sub">Supplementals, Society for Cultural Anthropology</p>
@@ -515,7 +640,7 @@
 
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <p class="cv-entry-title">Digit-al Symptoms</p>
+            <p class="cv-entry-title"><a href="https://www.anthropology-news.org/articles/digit-al-symptoms/" target="_blank">Digit-al Symptoms</a></p>
             <span class="cv-entry-date">2024</span>
           </div>
           <p class="cv-entry-sub">Anthropology News, American Anthropological Association</p>
@@ -523,7 +648,7 @@
 
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <p class="cv-entry-title">Absorbing Images</p>
+            <p class="cv-entry-title"><a href="https://www.culanth.org/fieldsights/absorbing-images" target="_blank">Absorbing Images</a></p>
             <span class="cv-entry-date">2024</span>
           </div>
           <p class="cv-entry-sub">Visual and New Media Review, Society for Cultural Anthropology</p>
@@ -531,7 +656,7 @@
 
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <p class="cv-entry-title">Shaka McGlotten on <em>Dragging: Or, in the Drag of a Queer Life</em></p>
+            <p class="cv-entry-title"><a href="https://campanthropology.org/2023/04/17/shaka-mcglotten-on-their-book-dragging-or-in-the-drag-of-a-queer-life/" target="_blank">Shaka McGlotten on <em>Dragging: Or, in the Drag of a Queer Life</em></a></p>
             <span class="cv-entry-date">2023</span>
           </div>
           <p class="cv-entry-sub">CaMP Anthropology Blog</p>
@@ -539,7 +664,7 @@
 
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <p class="cv-entry-title">Digitally Mediated Intimacies: An Interview with Molly Hales</p>
+            <p class="cv-entry-title"><a href="https://www.culanth.org/fieldsights/digitally-mediated-intimacies-an-interview-with-molly-hales" target="_blank">Digitally Mediated Intimacies: An Interview with Molly Hales</a></p>
             <span class="cv-entry-date">2021</span>
           </div>
           <p class="cv-entry-sub">Supplementals, Society for Cultural Anthropology</p>
@@ -547,7 +672,7 @@
 
         <div class="cv-entry">
           <div class="cv-entry-header">
-            <p class="cv-entry-title">Dust Response</p>
+            <p class="cv-entry-title"><a href="https://www.culanth.org/fieldsights/dust-response" target="_blank">Dust Response</a></p>
             <span class="cv-entry-date">2019</span>
           </div>
           <p class="cv-entry-sub">Member Voices, Society for Cultural Anthropology</p>
@@ -614,11 +739,6 @@
             <span class="cv-entry-date">2019</span>
           </div>
         </div>
-
-        <!-- PLACEHOLDER — decide whether to include earlier work -->
-        <!-- <div class="cv-entry cv-placeholder">
-          Earlier works (Loft 2015, Gum 2014) — include or omit?
-        </div> -->
 
       </div>
     </div>
