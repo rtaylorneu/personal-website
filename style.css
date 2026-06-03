@@ -198,3 +198,4 @@ main {
 .carousel.portrait .carousel-track img {
   aspect-ratio: 3/4;
 }
+.news-bar a:hover { opacity: 0.7; }
